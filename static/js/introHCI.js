@@ -15,4 +15,18 @@ function initializePage() {
 
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
+	$("a.thumbnail").click(projectClick);
+}
+
+function projectClick(e){
+	//debugging statement
+	console.log("Project clicked");
+
+	//prevent page from reloading
+	e.preventDefault();
+
+	var projectTitle = $(this).find("p").text();
+	// jumbotron is not an id, it's a class.
+	var jumbotronHeader = $(".jumbotron h1");
+	jumbotronHeader.text(projectTitle);
 }
