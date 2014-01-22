@@ -37,6 +37,8 @@ function projectClick(e){
 	jumbotronHeader.text(projectTitle);
 
 	var containingProject = $(this).closest(".project");
+	containingProject.toggleClass("activeProject");
+
 	var description = $(containingProject).find(".project-description");
 
 	//case of showing the description for the first time
@@ -44,7 +46,7 @@ function projectClick(e){
 		$(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
 	}
 
-	//toggles description visibility
+	//toggles description visibility with additional thumbnail clicks
 	description.toggle();
 }
 

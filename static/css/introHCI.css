@@ -44,3 +44,16 @@ body {
 .project a {
      text-align: center;
 }
+
+.project-description {
+     margin: 0px 0px 0px 0px;
+     padding: 0px 0px 0px 0px;
+     border-radius:15px;
+     background-color: rgba(231,231, 255, .2);
+}
+
+.project-description p{
+     color: #000000;
+     text-align: center;
+}
+
